@@ -13,5 +13,18 @@
  * limitations under the License.
  */
 
-export * from "./src/main/ets/ImageCropPickerPackage";
-export * from "./src/main/ets/ImageCropPickerTurboModule";
+#ifndef IMAGECROPPICKERPACKAGE_H
+#define IMAGECROPPICKERPACKAGE_H
+
+
+#include "generated/RNOH/generated/BaseReactNativeImageCropPickerPackage.h"
+#pragma once
+
+
+namespace rnoh {
+class ImageCropPickerPackage : public BaseReactNativeImageCropPickerPackage {
+    using Super = BaseReactNativeImageCropPickerPackage;
+    using Super::Super;
+};
+} // namespace rnoh
+#endif //IMAGECROPPICKERPACKAGE_H

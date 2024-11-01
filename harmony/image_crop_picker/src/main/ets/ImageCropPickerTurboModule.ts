@@ -1,5 +1,5 @@
 import type { TurboModuleContext } from '@rnoh/react-native-openharmony/ts';
-import { TM } from "@rnoh/react-native-openharmony/generated/ts"
+import { ImageCropPicker } from "./generated/turboModules/ImageCropPicker";
 import { TurboModule } from '@rnoh/react-native-openharmony/ts'
 import Logger from './Logger';
 import type Want from '@ohos.app.ability.Want';
@@ -223,7 +223,7 @@ export class AbilityResult {
   want?: Want;
 }
 
-export class ImageCropPickerTurboModule extends TurboModule implements TM.ImageCropPicker.Spec {
+export class ImageCropPickerTurboModule extends TurboModule implements ImageCropPicker.Spec {
   constructor(protected ctx: TurboModuleContext) {
     super(ctx);
   }
